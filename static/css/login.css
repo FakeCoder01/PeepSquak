@@ -1,0 +1,39 @@
+.input-fields{
+    width: 300px;
+    display: block;
+    padding: 8px;
+    margin: 16px;
+    display: block;
+    margin: auto;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 12px;
+    outline: none;
+    background-color: rgb(206, 191, 219);
+}
+.submit{
+    color: brown;
+    background-color: rgb(148, 240, 125);
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    font-size: 20px;
+    width: 100px;
+    padding: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.submit:hover{
+    background-color: rgb(159, 212, 248);
+    display: block;
+    margin: auto;
+}
+.form-container {
+    display: block;
+    background-color: azure;
+    border-radius: 20px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    width: 500px;
+}

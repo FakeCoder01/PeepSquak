@@ -1,0 +1,62 @@
+{% load static %}
+<div class="side_bar">
+    <div class="side_bar_top">
+      <div class="logo_wrap">
+        <a href="/">
+          <img src="{% static '/img/logo.png' %}" alt="logo">
+          <span class="text" style="font-family: 'Dancing Script', cursive;font-size: 25px;">PeepSquak</span>
+        </a>
+      </div>
+      <div class="side_bar_menu">
+        <div class="menu">
+          <i style="color: #ff0000f2;font-size: 24px;" class="bi bi-hearts"></i>
+        </div>
+      </div>
+    </div>
+    <div class="side_bar_bottom">
+      <ul>
+        <li id="home" >
+          <span class="top_curve"></span>
+          <a href="/">
+            <span class="item"><span class="icon"><i style="color: rgba(245, 99, 73, 0.849);" class="bi bi-house-heart-fill"></i></span> Home</span>
+          </a>
+          <span class="bottom_curve"></span>
+        </li>
+        <li id="add">
+          <span class="top_curve"></span>
+          <a href="/add">
+            <span class="item"><span class="icon"><i style="color: rgba(226, 148, 226, 0.959);" class="bi bi-plus-circle-fill"></i></span> Add</span>
+          </a>
+          <span class="bottom_curve"></span>
+        </li>
+
+        <li id="login">
+          <span class="top_curve"></span>
+          {% if request.user.is_authenticated %}
+          <a href="/logout">
+            <span class="item"><span class="icon"><i style="color: rgba(176, 255, 169, 0.932);" class="bi bi-door-closed-fill"></i></span> Logout</span>
+          </a>
+          {% else %}
+          <a href="/login">
+            <span class="item"><span class="icon"><i style="color: rgba(176, 255, 169, 0.932);" class="bi bi-door-open-fill"></i></span> Login</span>
+          </a>
+          {% endif %}
+          <span class="bottom_curve"></span>
+        </li>
+
+        <li id="contact">
+          <span class="top_curve"></span>
+          <a href="/contact">
+            <span class="item"> <span class="icon"><i style="color: rgba(105, 230, 247, 0.932);" class="bi bi-envelope-fill"></i></span> Contact</span>
+            <span class="bottom_curve"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="right-download-btn">
+    <div class="download-btn-link" onclick="downloadPDFfile();">
+      <i style="font-size: 20px;color: white;" class="bi bi-file-earmark-arrow-down"></i>
+    </div>
+  </div>

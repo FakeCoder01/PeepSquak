@@ -1,0 +1,36 @@
+.add-form{
+    width: 400px;
+    background-color: coral;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+.input-fields input, textarea{
+    width: 95%;
+    height: 50px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 12px;
+    border: 2px purple double;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.input-fields button{
+    color: darkorchid;
+    background-color: white;
+    padding: 10px 24px 10px 24px;
+    margin: 10px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+    font-size: 18px;
+    background-color: rgb(162, 223, 150);
+    font-weight: 550;
+    margin-bottom: 16px;
+}
+.input-fields button:hover{
+    color: darkorchid;
+    padding: 12px 26px 12px 26px;
+    background-color: rgb(140, 164, 216);
+    text-decoration: underline dotted;
+}
